@@ -70,7 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc NEWS README
 %dir %{perl_vendorarch}/Glib/Object
 %{perl_vendorarch}/Glib/Object/Introspection.pm
-%dir %{perl_vendorarch}/Glib/Object
 %dir %{perl_vendorarch}/Glib/Object/Introspection
 %{perl_vendorarch}/Glib/Object/Introspection/Install
 %dir %{perl_vendorarch}/auto/Glib/Object
