@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	Wiązania Glib Object-Introspection dla Perla
 Name:		perl-Glib-Object-Introspection
 Version:	0.015
 # place real perl-Glib version and set to 1 when required perl-Glib is released
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
 Source0:	http://downloads.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
