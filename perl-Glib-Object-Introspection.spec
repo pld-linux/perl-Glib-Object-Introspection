@@ -75,5 +75,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Glib/Object
 %dir %{perl_vendorarch}/auto/Glib/Object/Introspection
 %attr(755,root,root) %{perl_vendorarch}/auto/Glib/Object/Introspection/Introspection.so
-%{perl_vendorarch}/auto/Glib/Object/Introspection/Introspection.bs
 %{_mandir}/man3/Glib::Object::Introspection.3pm*
