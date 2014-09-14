@@ -7,13 +7,12 @@
 Summary:	Perl Glib Object-Introspection bindings
 Summary(pl.UTF-8):	Wiązania Glib Object-Introspection dla Perla
 Name:		perl-Glib-Object-Introspection
-Version:	0.015
-# place real perl-Glib version and set to 1 when required perl-Glib is released
-Release:	2
+Version:	0.024
+Release:	1
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
 Source0:	http://downloads.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
-# Source0-md5:	c3a7f69d2748b5d2d9b9cdfc838cb1ec
+# Source0-md5:	b659e5c5b3e26cdcfe86fb2450b86cdb
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	gobject-introspection-devel >= 0.10.0
 BuildRequires:	libffi-devel >= 3.0.0
