@@ -8,7 +8,7 @@ Summary:	Perl Glib Object-Introspection bindings
 Summary(pl.UTF-8):	Wiązania Glib Object-Introspection dla Perla
 Name:		perl-Glib-Object-Introspection
 Version:	0.024
-Release:	3
+Release:	4
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
 Source0:	http://downloads.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
