@@ -7,18 +7,18 @@
 Summary:	Perl Glib Object-Introspection bindings
 Summary(pl.UTF-8):	Wiązania Glib Object-Introspection dla Perla
 Name:		perl-Glib-Object-Introspection
-Version:	0.024
-Release:	4
+Version:	0.040
+Release:	1
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
 Source0:	http://downloads.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
-# Source0-md5:	b659e5c5b3e26cdcfe86fb2450b86cdb
+# Source0-md5:	df8329c498da77677d58ef337a75fa6d
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	gobject-introspection-devel >= 0.10.0
 BuildRequires:	libffi-devel >= 3.0.0
 BuildRequires:	perl-ExtUtils-Depends >= 0.300
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.00
-BuildRequires:	perl-Glib-devel >= 1.280
+BuildRequires:	perl-Glib-devel >= 1.320
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	pkgconfig(libffi) >= 3.0.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -27,7 +27,7 @@ BuildRequires:	cairo-devel
 BuildRequires:	glib2-devel >= 2.0
 %endif
 Requires:	gobject-introspection >= 0.10.0
-Requires:	perl-Glib >= 1.280
+Requires:	perl-Glib >= 1.320
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -67,6 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS README
+%attr(755,root,root) %{_bindir}/perli11ndoc
 %dir %{perl_vendorarch}/Glib/Object
 %{perl_vendorarch}/Glib/Object/Introspection.pm
 %dir %{perl_vendorarch}/Glib/Object/Introspection
