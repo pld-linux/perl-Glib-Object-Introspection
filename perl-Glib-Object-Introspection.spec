@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %define		pnam	Glib-Object-Introspection
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl Glib Object-Introspection bindings
 Summary(pl.UTF-8):	Wiązania Glib Object-Introspection dla Perla
 Name:		perl-Glib-Object-Introspection
