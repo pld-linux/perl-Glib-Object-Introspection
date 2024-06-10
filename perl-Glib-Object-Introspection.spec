@@ -1,18 +1,18 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pnam	Glib-Object-Introspection
 Summary:	Perl Glib Object-Introspection bindings
 Summary(pl.UTF-8):	Wiązania Glib Object-Introspection dla Perla
 Name:		perl-Glib-Object-Introspection
-Version:	0.049
-Release:	5
+Version:	0.051
+Release:	1
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
 Source0:	https://downloads.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
-# Source0-md5:	0d8ab0bf9c4d0a72eb35c16a2ff10d42
-URL:		http://gtk2-perl.sourceforge.net/
+# Source0-md5:	461b66d671674e435ec5dfbdbed6718d
+URL:		https://gtk2-perl.sourceforge.net/
 BuildRequires:	gobject-introspection-devel >= 1.60.0
 BuildRequires:	libffi-devel >= 3.0.0
 BuildRequires:	perl-ExtUtils-Depends >= 0.300
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc NEWS README
+%doc NEWS README.md
 %attr(755,root,root) %{_bindir}/perli11ndoc
 %dir %{perl_vendorarch}/Glib/Object
 %{perl_vendorarch}/Glib/Object/Introspection.pm
@@ -75,4 +75,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Glib/Object
 %dir %{perl_vendorarch}/auto/Glib/Object/Introspection
 %attr(755,root,root) %{perl_vendorarch}/auto/Glib/Object/Introspection/Introspection.so
+%{_mandir}/man1/perli11ndoc.1p*
 %{_mandir}/man3/Glib::Object::Introspection.3pm*
